@@ -3,7 +3,7 @@ import pandas as pd
 import joblib   # ✅ pickle hata diya
 
 # ---------------- LOAD MODEL ----------------
-model = joblib.load("model.pkl.gz")   # ✅ correct way
+model = joblib.load("model.pkl")   # ✅ correct way
 
 # ---------------- PAGE CONFIG ----------------
 st.set_page_config(
@@ -54,3 +54,4 @@ if st.button("🎯 Predict Exam Score"):
 # ---------------- FOOTER ----------------
 st.markdown("---")
 st.markdown("💡 *Developed using Machine Learning & Streamlit*")
+
